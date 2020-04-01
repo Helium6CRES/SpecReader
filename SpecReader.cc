@@ -10,7 +10,7 @@ int main ()
 
     //declare an input filestream object in binary format,
     //opened to the end of the file (ios:ate)
-    ifstream file ("Freq_data_2020-03-25-17-36-18_000000.spec", ios::in|ios::binary|ios::ate);
+    ifstream file ("/home/brent/Desktop/SpecFiles/Freq_data_2020-03-25-17-36-18_000000.spec", ios::in|ios::binary|ios::ate);
     if (file.is_open())
         {
         size = file.tellg();
@@ -24,7 +24,7 @@ int main ()
         //data = new int[size];
         //data = (int*)memblock;
 
-        ofstream outfile ("output.csv");
+        ofstream outfile ("/home/brent/Desktop/CSV_Spectrum_Data/Freq_data_2020-03-25-17-36-18_000000.csv");
         if (outfile.is_open())
             {
             int a = 0;
